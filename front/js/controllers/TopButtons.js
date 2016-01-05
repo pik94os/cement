@@ -8,8 +8,5 @@ define(['./module'],function(controllers){
         $scope.$on('tobButtons', function(event,args){
             $scope.showButton = args;
         });
-        $scope.getStop = function(str,from,to){
-            return str.indexOf('1', from) && str.indexOf('1', from)<=to && str.lastIndexOf('1')>to
-        }
     }])
 });

@@ -54,92 +54,92 @@ define(['./module'], function (controllers) {
             {
                 title: 'ТОВАРЫ (УСЛУГИ)',
                 content: [
-                    { title:'Товары' , state:'' },
-                    { title:'Услуги' , state:'' },
-                    { title:'Документы' , state:'' },
-                    { title:'Прайс-лист' , state:'' }
+                    { title:'Товары' , state:'Tovary' },
+                    { title:'Услуги' , state:'Uslugi' },
+                    { title:'Документы' , state:'Dokumenty' },
+                    { title:'Прайс-лист' , state:'Prays_list' }
                 ]
             },
             {
                 title: 'ТРАНСПОРТ',
                 content: [
-                    { title:'Автомобильный транспорт' , state:'' },
-                    { title:'Транспортные единицы' , state:'' },
-                    { title:'Управление АТС' , state:'' },
-                    { title:'Табель учета' , state:'' }
+                    { title:'Автомобильный транспорт' , state:'Avtomobilnyy_transport' },
+                    { title:'Транспортные единицы' , state:'Transportnye_edinitsy' },
+                    { title:'Управление АТС' , state:'Upravlenie_ATS' },
+                    { title:'Табель учета' , state:'Tabel_ucheta' }
                 ]
             },
             {
                 title: 'КЛИЕНТЫ',
                 content: [
-                    { title:'Корпоративный каталог' , state:'' },
-                    { title:'Проверка контрогента' , state:'' }
+                    { title:'Корпоративный каталог' , state:'Korporativnyy_katalog' },
+                    { title:'Проверка контрогента' , state:'Proverka_kontrogenta' }
                 ]
             },
             {
                 title: 'ДОГОВОРА',
                 content: [
-                    { title:'Договор' , state:'' },
-                    { title:'Приложения' , state:'' },
-                    { title:'Пользовательское соглашение' , state:'' }
+                    { title:'Договор' , state:'Dogovor' },
+                    { title:'Приложения' , state:'Prilozheniya' },
+                    { title:'Пользовательское соглашение' , state:'Polzovatelskoe_soglashenie' }
                 ]
             },
             {
                 title: 'ТОВАРООБОРОТ',
                 content: [
-                    { title:'Заявки на товар' , state:'' },
-                    { title:'Заявки на услуги' , state:'' },
-                    { title:'Каталог' , state:'' }
+                    { title:'Заявки на товар' , state:'Zayavki_na_tovar' },
+                    { title:'Заявки на услуги' , state:'Zayavki_na_uslugi' },
+                    { title:'Каталог' , state:'Katalog' }
                 ]
             },
             {
                 title: 'ЛОГИСТИКА',
                 content: [
-                    { title:'Лот на грузоперевозку' , state:'' },
-                    { title:'Биржа грузов' , state:'' },
-                    { title:'Биржа транспорта' , state:'' },
-                    { title:'Заявки на грузоперевозку' , state:'' }
+                    { title:'Лот на грузоперевозку' , state:'Lot_na_gruzoperevozku' },
+                    { title:'Биржа грузов' , state:'Birzha_gruzov' },
+                    { title:'Биржа транспорта' , state:'Birzha_transporta' },
+                    { title:'Заявки на грузоперевозку' , state:'Zayavki_na_gruzoperevozku' }
                 ]
             },
             {
                 title: 'СКЛАД',
                 content: [
-                    { title:'Склады' , state:'' },
-                    { title:'Движение товаров' , state:'' },
-                    { title:'Приходный складской ордер' , state:'' },
-                    { title:'Расходный складской ордер' , state:'' },
-                    { title:'Внутренние заявки' , state:'' },
-                    { title:'Инвентаризация' , state:'' }
+                    { title:'Склады' , state:'Sklady' },
+                    { title:'Движение товаров' , state:'Dvizhenie_tovarov' },
+                    { title:'Приходный складской ордер' , state:'Prikhodnyy_skladskoy_order' },
+                    { title:'Расходный складской ордер' , state:'Raskhodnyy_skladskoy_order' },
+                    { title:'Внутренние заявки' , state:'Vnutrennie_zayavki' },
+                    { title:'Инвентаризация' , state:'Inventarizatsiya' }
                 ]
             },
             {
                 title: 'БУХГАЛТЕРИЯ',
                 content: [
-                    { title:'Документы (приход/расход)' , state:'' },
-                    { title:'Банковские документы' , state:'' },
-                    { title:'Кассовые документы' , state:'' },
-                    { title:'Иные документы' , state:'' },
-                    { title:'Индикаторы' , state:'' },
-                    { title:'Отчетность' , state:'' }
+                    { title:'Документы (приход/расход)' , state:'Dokumenty_prikhod_raskhod' },
+                    { title:'Банковские документы' , state:'Bankovskie_dokumenty' },
+                    { title:'Кассовые документы' , state:'Kassovye_dokumenty' },
+                    { title:'Иные документы' , state:'Inye_dokumenty' },
+                    { title:'Индикаторы' , state:'Indikatory' },
+                    { title:'Отчетность' , state:'Otchetnost' }
                 ]
             },
             {
                 title: 'ДЕЛОПРОИЗВОДСТВО',
                 content: [
-                    { title:'Внутренние документы' , state:'' },
-                    { title:'Корреспонденция' , state:'' },
-                    { title:'Распорядительные' , state:'' }
+                    { title:'Внутренние документы' , state:'Vnutrennie_dokumenty' },
+                    { title:'Корреспонденция' , state:'Korrespondentsiya' },
+                    { title:'Распорядительные' , state:'Rasporyaditelnye' }
                 ]
             },
             {
                 title: 'НАВИГАЦИЯ',
                 content: [
-                    { title:'Мониторинг' , state:'' },
-                    { title:'Объекты' , state:'' },
-                    { title:'Зоны' , state:'' },
-                    { title:'Треки' , state:'' },
-                    { title:'Индикаторы' , state:'' },
-                    { title:'План-график' , state:'' }
+                    { title:'Мониторинг' , state:'Monitoring' },
+                    { title:'Объекты' , state:'Objects' },
+                    { title:'Зоны' , state:'Zony' },
+                    { title:'Треки' , state:'Treki' },
+                    { title:'Индикаторы' , state:'Indicators' },
+                    { title:'План-график' , state:'Plan_grafik' }
                 ]
             }
         ];

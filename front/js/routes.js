@@ -140,6 +140,211 @@ define(['./app'], function (app) {
                 templateUrl: "/templates/templ3.html",
                 controller: 'Administrirovanie'
             })
+            .state('Tovary', {
+                url: "/Tovary",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Tovary'
+            })
+            .state('Uslugi', {
+                url: "/Uslugi",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Uslugi'
+            })
+            .state('Dokumenty', {
+                url: "/Dokumenty",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Dokumenty'
+            })
+            .state('Prays_list', {
+                url: "/Prays_list",
+                templateUrl: "/templates/templ3.html",
+                controller: 'PraysList'
+            })
+            .state('Avtomobilnyy_transport', {
+                url: "/Avtomobilnyy_transport",
+                templateUrl: "/templates/templ3.html",
+                controller: 'AvtomobilnyyTransport'
+            })
+            .state('Transportnye_edinitsy', {
+                url: "/Transportnye_edinitsy",
+                templateUrl: "/templates/templ3.html",
+                controller: 'TransportnyeEdinitsy'
+            })
+            .state('Upravlenie_ATS', {
+                url: "/Upravlenie_ATS",
+                templateUrl: "/templates/templ3.html",
+                controller: 'UpravlenieAts'
+            })
+            .state('Tabel_ucheta', {
+                url: "/Tabel_ucheta",
+                templateUrl: "/templates/templ5.html",
+                controller: 'TabelUcheta'
+            })
+            .state('Korporativnyy_katalog', {
+                url: "/Korporativnyy_katalog",
+                templateUrl: "/templates/templ3.html",
+                controller: 'KorporativnyyKatalog'
+            })
+            .state('Proverka_kontrogenta', {
+                url: "/Proverka_kontrogenta",
+                templateUrl: "/templates/templ1.html",
+                controller: 'ProverkaKontrogenta'
+            })
+            .state('Dogovor', {
+                url: "/Dogovor",
+                templateUrl: "/templates/templ4.html",
+                controller: 'Dogovor'
+            })
+            .state('Prilozheniya', {
+                url: "/Prilozheniya",
+                templateUrl: "/templates/templ4.html",
+                controller: 'Prilozheniya'
+            })
+            .state('Polzovatelskoe_soglashenie', {
+                url: "/Polzovatelskoe_soglashenie",
+                templateUrl: "/templates/templ4.html",
+                controller: 'PolzovatelskoeSoglashenie'
+            })
+            .state('Zayavki_na_tovar', {
+                url: "/Zayavki_na_tovar",
+                templateUrl: "/templates/templ4.html",
+                controller: 'ZayavkiNaTovar'
+            })
+            .state('Zayavki_na_uslugi', {
+                url: "/Zayavki_na_uslugi",
+                templateUrl: "/templates/templ4.html",
+                controller: 'ZayavkiNaUslugi'
+            })
+            .state('Katalog', {
+                url: "/Katalog",
+                templateUrl: "/templates/templ1.html",
+                controller: 'Katalog'
+            })
+            .state('Lot_na_gruzoperevozku', {
+                url: "/Lot_na_gruzoperevozku",
+                templateUrl: "/templates/templ4.html",
+                controller: 'LotNaGruzoperevozku'
+            })
+            .state('Birzha_gruzov', {
+                url: "/Birzha_gruzov",
+                templateUrl: "/templates/templ5.html",
+                controller: 'BirzhaGruzov'
+            })
+            .state('Birzha_transporta', {
+                url: "/Birzha_transporta",
+                templateUrl: "/templates/templ5.html",
+                controller: 'BirzhaTransporta'
+            })
+            .state('Zayavki_na_gruzoperevozku', {
+                url: "/Zayavki_na_gruzoperevozku",
+                templateUrl: "/templates/templ4.html",
+                controller: 'ZayavkiNaGruzoperevozku'
+            })
+            .state('Sklady', {
+                url: "/Sklady",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Sklady'
+            })
+            .state('Dvizhenie_tovarov', {
+                url: "/Dvizhenie_tovarov",
+                templateUrl: "/templates/templ1.html",
+                controller: 'DvizhenieTovarov'
+            })
+            .state('Prikhodnyy_skladskoy_order', {
+                url: "/Prikhodnyy_skladskoy_order",
+                templateUrl: "/templates/templ3.html",
+                controller: 'PrikhodnyySkladskoyOrder'
+            })
+            .state('Raskhodnyy_skladskoy_order', {
+                url: "/Raskhodnyy_skladskoy_order",
+                templateUrl: "/templates/templ3.html",
+                controller: 'RaskhodnyySkladskoyOrder'
+            })
+            .state('Vnutrennie_zayavki', {
+                url: "/Vnutrennie_zayavki",
+                templateUrl: "/templates/templ3.html",
+                controller: 'VnutrennieZayavki'
+            })
+            .state('Inventarizatsiya', {
+                url: "/Inventarizatsiya",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Inventarizatsiya'
+            })
+            .state('Dokumenty_prikhod_raskhod', {
+                url: "/Dokumenty_prikhod_raskhod",
+                templateUrl: "/templates/templ4.html",
+                controller: 'DokumentyPrikhodRaskhod'
+            })
+            .state('Bankovskie_dokumenty', {
+                url: "/Bankovskie_dokumenty",
+                templateUrl: "/templates/templ4.html",
+                controller: 'BankovskieDokumenty'
+            })
+            .state('Kassovye_dokumenty', {
+                url: "/Kassovye_dokumenty",
+                templateUrl: "/templates/templ4.html",
+                controller: 'KassovyeDokumenty'
+            })
+            .state('Inye_dokumenty', {
+                url: "/Inye_dokumenty",
+                templateUrl: "/templates/templ3.html",
+                controller: 'InyeDokumenty'
+            })
+            .state('Indikatory', {
+                url: "/Indikatory",
+                templateUrl: "/templates/templ1.html",
+                controller: 'Indikatory'
+            })
+            .state('Otchetnost', {
+                url: "/Otchetnost",
+                templateUrl: "/templates/templ4.html",
+                controller: 'Otchetnost'
+            })
+            .state('Vnutrennie_dokumenty', {
+                url: "/Vnutrennie_dokumenty",
+                templateUrl: "/templates/templ3.html",
+                controller: 'VnutrennieDokumenty'
+            })
+            .state('Korrespondentsiya', {
+                url: "/Korrespondentsiya",
+                templateUrl: "/templates/templ4.html",
+                controller: 'Korrespondentsiya'
+            })
+            .state('Rasporyaditelnye', {
+                url: "/Rasporyaditelnye",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Rasporyaditelnye'
+            })
+            .state('Monitoring', {
+                url: "/Monitoring",
+                templateUrl: "/templates/templ1.html",
+                controller: 'Monitoring'
+            })
+            .state('Objects', {
+                url: "/Objects",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Objects'
+            })
+            .state('Zony', {
+                url: "/Zony",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Zony'
+            })
+            .state('Treki', {
+                url: "/Treki",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Treki'
+            })
+            .state('Indicators', {
+                url: "/Indicators",
+                templateUrl: "/templates/templ1.html",
+                controller: 'Indicators'
+            })
+            .state('Plan_grafik', {
+                url: "/Plan_grafik",
+                templateUrl: "/templates/templ1.html",
+                controller: 'PlanGrafik'
+            })
             //Ошибка 404
             .state('err_404', {
                 url: "/err404",
