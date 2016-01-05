@@ -1,3 +1,3 @@
 define([
-    './DefFilt',
+    './GetStop',
 ], function () {});

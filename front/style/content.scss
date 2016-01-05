@@ -30,22 +30,240 @@ body{
       padding: 5px;
     }
   }
-  nav.top-buttons{
+  .top-buttons{
     height: 25px;
     border:{
       bottom: $main-border;
       top: $main-border;
     }
     background-color: #F3F3F3;
-    & > ul {
-      padding: 0;
-      & > li {
-        display: inline-block;
+    &-ul {
+      &:not(.not-none){
+        display: none;
+      }
+      padding-left: 3px;
+      &-li {
+        float: left;
+        background-repeat: no-repeat;
+        line-height: 20px;
+        padding: 0 3px;
+        margin: 2px 1px;
+        &.top-buttons-stop{
+          border-left: 1px solid #C5C5C5;
+          height: 18px;
+        }
+        &:not(.top-buttons-stop){
+          cursor: pointer;
+          &:hover{
+            background-color: $selected-color;
+          }
+        }
+      }
+    }
+
+    $img-group1: url(/img/col1.png);
+    &-new{
+      padding-left: 17px;
+      background:{
+        image: $img-group1;
+        position-y: 2px;
+      }
+    }
+    &-edit{
+      padding-left: 19px;
+      background:{
+        image: $img-group1;
+        position-y: -23px;
+      }
+    }
+    &-delete{
+      padding-left: 17px;
+      background:{
+        image: $img-group1;
+        position-y: -83px;
+      }
+    }
+    &-save{
+      padding-left: 21px;
+      background:{
+        image: $img-group1;
+        position-y: -53px;
+      }
+    }
+    &-dubl{
+      padding-left: 20px;
+      background:{
+        image: $img-group1;
+        position-y: -115px;
+      }
+    }
+    &-to-arh{
+      padding-left: 20px;
+      background:{
+        image: $img-group1;
+        position-y: -148px;
+      }
+    }
+    &-from-arh{
+      padding-left: 19px;
+      background:{
+        image: $img-group1;
+        position-y: -182px;
+      }
+    }
+
+    $img-group2: url(/img/col2.png);
+    &-sogl{
+      padding-left: 17px;
+      background:{
+        image: $img-group2;
+        position-y: 1px;
+      }
+    }
+    &-podp{
+      padding-left: 19px;
+      background:{
+        image: $img-group2;
+        position-y: -22px;
+      }
+    }
+    &-otkl{
+      padding-left: 20px;
+      background:{
+        image: $img-group2;
+        position-y: -46px;
+      }
+    }
+
+    $img-group3: url(/img/col3.png);
+    &-tabl{
+      padding-left: 18px;
+      background:{
+        image: $img-group3;
+        position-y: 1px;
+      }
+    }
+    &-card{
+      padding-left: 20px;
+      background:{
+        image: $img-group3;
+        position-y: -21px;
+      }
+    }
+    &-ek{
+      padding-left: 20px;
+      background:{
+        image: $img-group3;
+        position-y: -44px;
+      }
+    }
+
+    $img-group4: url(/img/col4.png);
+    &-day{
+      padding-left: 18px;
+      background:{
+        image: $img-group4;
+        position-y: 1px;
+      }
+    }
+    &-week{
+      padding-left: 17px;
+      background:{
+        image: $img-group4;
+        position-y: -20px;
+      }
+    }
+    &-month{
+      padding-left: 17px;
+      background:{
+        image: $img-group4;
+        position-y: -41px;
+      }
+    }
+
+    $img-group5: url(/img/col7.png);
+    &-mess{
+      padding-left: 17px;
+      background:{
+        image: $img-group5;
+        position-y: 3px;
+      }
+    }
+    &-comment{
+      padding-left: 18px;
+      background:{
+        image: $img-group5;
+        position-y: -24px;
+      }
+    }
+    &-remind {
+      padding-left: 17px;
+      background: {
+        image: $img-group5;
+        position-y: -56px;
+      }
+    }
+    &-rout {
+      padding-left: 16px;
+      background: {
+        image: $img-group5;
+        position-y: -85px;
+      }
+    }
+    $img-group6: url(/img/col6.png);
+    &-svyazat{
+      padding-left: 16px;
+      background:{
+        image: $img-group6;
+        position-y: 2px;
+      }
+    }
+    &-razorv{
+      padding-left: 16px;
+      background:{
+        image: $img-group6;
+        position-y: -29px;
+      }
+    }
+    &-hide {
+      padding-left: 17px;
+      background: {
+        image: $img-group6;
+        position-y: -61px;
+      }
+    }
+
+    $img-group7: url(/img/col5.png);
+    &-print{
+      padding-left: 20px;
+      background:{
+        image: $img-group7;
+        position-y: 2px;
+      }
+    }
+    &-help{
+      padding-left: 17px;
+      background:{
+        image: $img-group7;
+        position-y: -33px;
+      }
+    }
+    &-update{
+      padding-left: 20px;
+      background: {
+        image: $img-group7;
+        position-y: -80px;
+      }
+    }
+    &-sittings{
+      padding-left: 20px;
+      background: {
+        image: $img-group7;
+        position-y: -133px;
       }
     }
   }
 }
-
 .window{
   height: calc(100% - 84px);
   & > .row{

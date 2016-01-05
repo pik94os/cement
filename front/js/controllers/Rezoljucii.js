@@ -1,7 +1,7 @@
 define(['./module'],function(controllers){
     'use strict';
-    controllers.controller('Rezoljucii',['$scope', function($scope){
-
+    controllers.controller('Rezoljucii',['$rootScope','$scope', function($rootScope,$scope){
+        $rootScope.$broadcast('tobButtons', '0000000111000000010100001111');
     }])
 });
 /**

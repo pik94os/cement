@@ -3,7 +3,7 @@
  */
 define(['./module'],function(controllers){
     'use strict';
-    controllers.controller('ModulSozdanijaDokumentov',['$scope', function($scope){
-
+    controllers.controller('ModulSozdanijaDokumentov',['$rootScope', function($rootScope){
+        $rootScope.$broadcast('tobButtons', '1111000000000000000000001111');
     }])
 });

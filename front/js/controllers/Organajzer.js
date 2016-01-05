@@ -3,7 +3,7 @@
  */
 define(['./module'],function(controllers){
     'use strict';
-    controllers.controller('Organajzer',['$scope', function($scope){
-
+    controllers.controller('Organajzer',['$rootScope','$scope', function($rootScope,$scope){
+        $rootScope.$broadcast('tobButtons', '1110000000000000001000001111');
     }])
 });

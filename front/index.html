@@ -29,41 +29,41 @@
         </div>
     </nav>
     <nav class="top-buttons" ng-controller="TopButtons">
-        <ul>
-            <li class="top-buttons-new">Новый</li>
-            <li class="top-buttons-edit">Редактировать</li>
-            <li class="top-buttons-delete">Удалить</li>
-            <li class="top-buttons-save">Сохранить</li>
-            <li class="top-buttons-dubl">Дублировать</li>
-            <li class="top-buttons-to-arh">В архив</li>
-            <li class="top-buttons-from-arh">Из архива</li>
-            <li class="top-buttons-stop"></li>
-            <li class="top-buttons-sogl">Согласовать</li>
-            <li class="top-buttons-podp">Подписать</li>
-            <li class="top-buttons-otkl">Отклонить</li>
-            <li class="top-buttons-stop"></li>
-            <li class="top-buttons-sogl">Таблица</li>
-            <li class="top-buttons-podp">Карточка</li>
-            <li class="top-buttons-otkl">Экран</li>
-            <li class="top-buttons-stop"></li>
-            <li class="top-buttons-day">День</li>
-            <li class="top-buttons-week">Неделя</li>
-            <li class="top-buttons-month">Месяц</li>
-            <li class="top-buttons-stop"></li>
-            <li class="top-buttons-mess">Сообщения</li>
-            <li class="top-buttons-comment">Комментарий</li>
-            <li class="top-buttons-remind">Напоминания</li>
-            <li class="top-buttons-rout">Маршрут</li>
-            <li class="top-buttons-stop"></li>
-            <li class="top-buttons-svyazat">Связать</li>
-            <li class="top-buttons-razorv">Разорвать</li>
-            <li class="top-buttons-hide">Скрыть</li>
-            <li class="top-buttons-stop"></li>
-            <li class="top-buttons-print">Печать</li>
-            <li class="top-buttons-help">Помощь</li>
-            <li class="top-buttons-update">Обновить</li>
-            <li class="top-buttons-sittings">Настройка</li>
-        </ul>
+        <div class="top-buttons-ul" ng-class="{'not-none':showButton}">
+            <div ng-show="+showButton[0]" class="top-buttons-ul-li top-buttons-new">Новый</div>
+            <div ng-show="+showButton[1]" class="top-buttons-ul-li top-buttons-edit">Редактировать</div>
+            <div ng-show="+showButton[2]||+showButton[22]" class="top-buttons-ul-li top-buttons-delete">Удалить</div>
+            <div ng-show="+showButton[3]" class="top-buttons-ul-li top-buttons-save">Сохранить</div>
+            <div ng-show="+showButton[4]" class="top-buttons-ul-li top-buttons-dubl">Дублировать</div>
+            <div ng-show="+showButton[5]" class="top-buttons-ul-li top-buttons-to-arh">В архив</div>
+            <div ng-show="+showButton[6]" class="top-buttons-ul-li top-buttons-from-arh">Из архива</div>
+            <div ng-show="showButton | GetStop:0:6" class="top-buttons-ul-li top-buttons-stop"></div>
+            <div ng-show="+showButton[7]" class="top-buttons-ul-li top-buttons-sogl">Согласовать</div>
+            <div ng-show="+showButton[8]" class="top-buttons-ul-li top-buttons-podp">Подписать</div>
+            <div ng-show="+showButton[9]" class="top-buttons-ul-li top-buttons-otkl">Отклонить</div>
+            <div ng-show="showButton | GetStop:7:9" class="top-buttons-ul-li top-buttons-stop"></div>
+            <div ng-show="+showButton[10]" class="top-buttons-ul-li top-buttons-tabl">Таблица</div>
+            <div ng-show="+showButton[11]" class="top-buttons-ul-li top-buttons-card">Карточка</div>
+            <div ng-show="+showButton[12]" class="top-buttons-ul-li top-buttons-ek">Экран</div>
+            <div ng-show="showButton | GetStop:10:12" class="top-buttons-ul-li top-buttons-stop"></div>
+            <div ng-show="+showButton[13]" class="top-buttons-ul-li top-buttons-day">День</div>
+            <div ng-show="+showButton[14]" class="top-buttons-ul-li top-buttons-week">Неделя</div>
+            <div ng-show="+showButton[15]" class="top-buttons-ul-li top-buttons-month">Месяц</div>
+            <div ng-show="showButton | GetStop:13:15" class="top-buttons-ul-li top-buttons-stop"></div>
+            <div ng-show="+showButton[16]" class="top-buttons-ul-li top-buttons-mess">Сообщения</div>
+            <div ng-show="+showButton[17]" class="top-buttons-ul-li top-buttons-comment">Комментарий</div>
+            <div ng-show="+showButton[18]" class="top-buttons-ul-li top-buttons-remind">Напоминания</div>
+            <div ng-show="+showButton[19]" class="top-buttons-ul-li top-buttons-rout">Маршрут</div>
+            <div ng-show="showButton | GetStop:16:19" class="top-buttons-ul-li top-buttons-stop"></div>
+            <div ng-show="+showButton[20]" class="top-buttons-ul-li top-buttons-svyazat">Связать</div>
+            <div ng-show="+showButton[21]" class="top-buttons-ul-li top-buttons-razorv">Разорвать</div>
+            <div ng-show="+showButton[23]" class="top-buttons-ul-li top-buttons-hide">Скрыть</div>
+            <div ng-show="showButton | GetStop:20:23" class="top-buttons-ul-li top-buttons-stop"></div>
+            <div ng-show="+showButton[24]" class="top-buttons-ul-li top-buttons-print">Печать</div>
+            <div ng-show="+showButton[25]" class="top-buttons-ul-li top-buttons-help">Помощь</div>
+            <div ng-show="+showButton[26]" class="top-buttons-ul-li top-buttons-update">Обновить</div>
+            <div ng-show="+showButton[27]" class="top-buttons-ul-li top-buttons-sittings">Настройка</div>
+        </div>
     </nav>
     <div class="container-fluid window">
         <div class="row">

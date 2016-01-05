@@ -5,6 +5,7 @@ define([
     './Rezoljucii',
     './PersonalnyeDokumenty',
     './Kalendar',
+    './Druzja',
     './Soobshhenija',
     './Organajzer',
     './Fotografii',
