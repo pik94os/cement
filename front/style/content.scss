@@ -77,6 +77,47 @@ body{
       margin-top: 34px;
       border: $main-border;
       height: calc(100% - 35px - 60px);
+      &-header{
+        margin-top: -20px;
+        padding: {
+          right: 2px;
+          left: 5px;
+        }
+        &-btn{
+          float: right;
+        }
+      }
+      &-tabs{
+        $margin:26px;
+        margin-top: -$margin;
+        height: $margin + 1px;
+        &-ul{
+          display: block;
+          height: 100%;
+        }
+        &-li{
+          margin-left: -1px;
+          padding: 5px;
+          cursor: pointer;
+          border: {
+            top: $main-border;
+            left: $main-border;
+            right: $main-border;
+          };
+          float: left;
+          height: $margin - 2px;
+          background: linear-gradient(#E2E2E2,#D3D3D3);
+          border-radius: 0 2px 0 0;
+          &.active{
+            height: $margin;
+            background: $main-background-color;
+          }
+          &:not(.active){
+            border-bottom: $main-border;
+            margin-top: 2px;
+          }
+        }
+      }
     }
     .nobody-icon{
       text-align: center;

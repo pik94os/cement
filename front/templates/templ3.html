@@ -1,0 +1,16 @@
+<div class="content">
+    <div class="content-tabs">
+        <div class="content-tabs-ul" ng-init="tabShow=0">
+            <div class="content-tabs-li" ng-click="tabShow=0" ng-class="{'active':!tabShow}">Новые</div>
+            <div class="content-tabs-li" ng-click="tabShow=1" ng-class="{'active':tabShow==1}">Действующие</div>
+            <div class="content-tabs-li" ng-click="tabShow=2" ng-class="{'active':tabShow==2}">Архив</div>
+        </div>
+    </div>
+    <div class="tabs-content" ng-hide="tabShow"></div>
+    <div class="tabs-content" ng-show="tabShow==1"></div>
+    <div class="tabs-content" ng-show="tabShow==2"></div>
+</div>
+<div class="nobody-icon"><span class="icon-g icon-g-triangular-up"></span></div>
+<div class="dop-block"><span>СВЯЗАННЫЕ ДОКУМЕНТЫ</span> <span class="icon-g icon-g-triangular-down icon-for-block"></span></div>
+<div class="nobody-icon"><span class="icon-g icon-g-triangular-up"></span></div>
+<div class="dop-block"><span>СПРАВОЧНИК</span> <span class="icon-g icon-g-triangular-down icon-for-block"></span></div>

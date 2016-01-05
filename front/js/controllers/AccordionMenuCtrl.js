@@ -3,7 +3,7 @@
  */
 define(['./module'], function (controllers) {
     'use strict';
-    controllers.controller('AccordionMenuCtrl', ['$scope', function($scope){
+    controllers.controller('AccordionMenuCtrl', ['$rootScope','$scope','$state', function($rootScope,$scope,$state){
         $scope.openIndex = 0;
         $scope.setOpenIndex = function(index){
             $scope.openIndex = index;
@@ -21,7 +21,7 @@ define(['./module'], function (controllers) {
                     { title:'Органайзер' , state:'Organajzer' },
                     { title:'Фотографии' , state:'Fotografii' },
                     { title:'Новости' , state:'Novosti' },
-                    { title:'ГРУППЫ' , state:'groups' },
+                    { title:'ГРУППЫ' , state:'Groups' },
                     { title:'Модуль создания документов' , state:'Modul_sozdanija_dokumentov' }
                 ]
             },
@@ -143,5 +143,16 @@ define(['./module'], function (controllers) {
                 ]
             }
         ];
+        $rootScope.$on('$stateChangeSuccess',
+            function(event, toState, toParams, fromState, fromParams) {
+                $scope.items.forEach(function(t,num){
+                    t.content.forEach(function (con) {
+                        if(toState.name==con.state){
+                            $scope.openIndex = num;
+                        }
+                    });
+                });
+            }
+        )
     }]);
 });

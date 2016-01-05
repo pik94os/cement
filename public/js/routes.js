@@ -30,6 +30,51 @@ define(['./app'], function (app) {
                 templateUrl: "/templates/templ6.html",
                 controller: 'Druzja'
             })
+            .state('Soobshhenija', {
+                url: "/Soobshhenija",
+                templateUrl: "/templates/templ5.html",
+                controller: 'Soobshhenija'
+            })
+            .state('Organajzer', {
+                url: "/Organajzer",
+                templateUrl: "/templates/templ5.html",
+                controller: 'Organajzer'
+            })
+            .state('Fotografii', {
+                url: "/Fotografii",
+                templateUrl: "/templates/templ5.html",
+                controller: 'Fotografii'
+            })
+            .state('Novosti', {
+                url: "/Novosti",
+                templateUrl: "/templates/templ5.html",
+                controller: 'Novosti'
+            })
+            .state('Groups', {
+                url: "/Groups",
+                templateUrl: "/templates/templ5.html",
+                controller: 'Groups'
+            })
+            .state('Modul_sozdanija_dokumentov', {
+                url: "/Modul_sozdanija_dokumentov",
+                templateUrl: "/templates/templ9.html",
+                controller: 'ModulSozdanijaDokumentov'
+            })
+            .state('Korporativnyj_akkaunt', {
+                url: "/Korporativnyj_akkaunt",
+                templateUrl: "/templates/templ1.html",
+                controller: 'KorporativnyjAkkaunt'
+            })
+            .state('Filialy', {
+                url: "/Filialy",
+                templateUrl: "/templates/templ1.html",
+                controller: 'Filialy'
+            })
+            .state('Otdely', {
+                url: "/Otdely",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Otdely'
+            })
             //Ошибка 404
             .state('err_404', {
                 url: "/err404",

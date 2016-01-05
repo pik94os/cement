@@ -43,7 +43,7 @@
                     <span class="glyphicon glyphicon-chevron-up"></span>
                 </div>
                 <ul class="accordion-menu" ng-controller="AccordionMenuCtrl">
-                    <li class="accordion-menu-li" ng-repeat="item in items">
+                    <li class="accordion-menu-li" ng-repeat="item in items" >
                         <div class="accordion-menu-head" ng-click="setOpenIndex($index)">
                             <span class="accordion-menu-title" ng-bind="item.title"></span>
                             <span class="accordion-menu-icon icon-g"  ng-class="{'icon-g-up164': $index == openIndex, 'icon-g-two389': $index != openIndex}"></span>

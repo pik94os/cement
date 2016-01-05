@@ -4,4 +4,13 @@ define([
     './Rezoljucii',
     './PersonalnyeDokumenty',
     './Kalendar',
+    './Soobshhenija',
+    './Organajzer',
+    './Fotografii',
+    './Novosti',
+    './Groups',
+    './ModulSozdanijaDokumentov',
+    './KorporativnyjAkkaunt',
+    './Filialy',
+    './Otdely',
 ], function () {});
