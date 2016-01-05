@@ -2,3 +2,4 @@
 node_modules
 front/bower_components
 .idea
+/public/*

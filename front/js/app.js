@@ -4,7 +4,6 @@
 define([
     'angular',
     'uiRouter',
-    'btstrp',
     './controllers/index',
     './filters/index',
 ], function (ng) {
@@ -12,7 +11,6 @@ define([
 
     return ng.module('app', [
         'ui.router',
-        'ui.bootstrap',
         'app.controllers',
         'app.filters'
     ]);

@@ -5,58 +5,35 @@ define(['./app'], function (app) {
         $urlRouterProvider.otherwise("/err_404");
         $stateProvider
             //Стартовая страница
-            .state('conf', {
+            .state('Personalnyj_akkaunt', {
                 url: "/",
-                views: {
-                    '':{
-                        templateUrl: "/views/conference/search.html",
-                        controller: 'SearchCtrl'
-                    },
-                    'head':{
-                        templateUrl: "/views/headForm.html",
-                        controller: 'LoginCtrl'
-                    }
-                }
+                templateUrl: "/templates/templ5.html",
+                controller: 'PersonalnyjAkkaunt'
             })
-            .state('design', {
-                url: "/design",
-                templateUrl: "/views/design/list.html",
-                controller: 'DesignCtrl'
+            .state('Rezoljucii', {
+                url: "/Rezoljucii",
+                templateUrl: "/templates/templ1.html",
+                controller: 'Rezoljucii'
             })
-            .state('pages', {
-                url: "/pages",
-                templateUrl: "/views/pages/list.html",
-                controller: 'PagesCtrl'
+            .state('Personalnye_dokumenty', {
+                url: "/Personalnye_dokumenty",
+                templateUrl: "/templates/templ5.html",
+                controller: 'PersonalnyeDokumenty'
             })
-            .state('innovations',{
-                url: "/innovations",
-                templateUrl: "/views/innovations/innovations.html",
-                controller: "InnovationsCtrl"
+            .state('Kalendar', {
+                url: "/Kalendar",
+                templateUrl: "/templates/templ5.html",
+                controller: 'Kalendar'
             })
-            .state('help',{
-                url: "/help",
-                templateUrl: "/views/help/list.html",
-                controller: "HelpCtrl"
-            })
-            .state('token',{
-                url:	"/token",
-                controller: "TokenAuthCtrl",
-                template: "<div>Проверка данных...</div>"
-            })
-            .state('account',{
-                url:'/account',
-                templateUrl: "/views/account/list.html",
-                controller: "AccountCtrl"
+            .state('Druzja', {
+                url: "/Druzja",
+                templateUrl: "/templates/templ6.html",
+                controller: 'Druzja'
             })
             //Ошибка 404
-            .state('err404', {
+            .state('err_404', {
                 url: "/err404",
-                templateUrl: "/views/err404.html"
-            })
-            .state('open', {
-                url: "/:sn",
-                templateUrl: "/views/conference/open.html",
-                controller: 'OpenCtrl'
+                templateUrl: "/templates/err404.html"
             })
         //Включаем красивые url(требуется html5)
         $locationProvider.html5Mode({

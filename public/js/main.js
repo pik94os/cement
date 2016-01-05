@@ -8,7 +8,6 @@ require.config({
         'domReady': '../bower_components/requirejs-domready/domReady',
         'angular': '../bower_components/angular/angular.min',
         'uiRouter': '../bower_components/angular-ui-router/release/angular-ui-router.min',
-        'btstrp': '../bower_components/angular-bootstrap/ui-bootstrap.min'
     },
 
     // angular не поддерживает AMD из коробки, поэтому экспортируем перменную angular в глобальную область
@@ -18,9 +17,6 @@ require.config({
             exports: 'angular'
         },
         'uiRouter':{
-            deps: ['angular']
-        },
-        'btstrp':{
             deps: ['angular']
         }
     },
