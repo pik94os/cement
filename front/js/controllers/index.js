@@ -1,5 +1,6 @@
 define([
     './AccordionMenuCtrl',
+    './TopButtons',
     './PersonalnyjAkkaunt',
     './Rezoljucii',
     './PersonalnyeDokumenty',
@@ -14,4 +15,16 @@ define([
     './Filialy',
     './Otdely',
     './KorporativnyeDokumenty',
+    './Gruppy',
+    './KorporativnyeFotografii',
+    './BankovskieScheta',
+    './KorporativnyeNovosti',
+    './RezjumePersonalnyjAkkaunt',
+    './RezjumeKorporativnyjAkkaunt',
+    './Sotrudniki',
+    './VakansiiKorporativnyjAkkaunt',
+    './VakansiiPersonalnyjAkkaunt',
+    './ZajavkiNaRabotu',
+    './Podpisi',
+    './Administrirovanie',
 ], function () {});

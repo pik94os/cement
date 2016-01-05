@@ -41,14 +41,14 @@ define(['./module'], function (controllers) {
             {
                 title: 'КАДРЫ',
                 content: [
-                    { title:'Резюме персональный аккаунт' , state:'' },
+                    { title:'Резюме персональный аккаунт' , state:'Rezjume_personalnyj_akkaunt' },
                     { title:'Резюме корпоративный аккаунт' , state:'Rezjume_korporativnyj_akkaunt' },
-                    { title:'Сотрудники' , state:'' },
-                    { title:'Вакансии корпоративный аккаунт' , state:'' },
-                    { title:'Вакансии персональный аккаунт' , state:'' },
-                    { title:'Заявки на работу' , state:'' },
-                    { title:'Подписи' , state:'' },
-                    { title:'Администрирование' , state:'' }
+                    { title:'Сотрудники' , state:'Sotrudniki' },
+                    { title:'Вакансии корпоративный аккаунт' , state:'Vakansii_korporativnyj_akkaunt' },
+                    { title:'Вакансии персональный аккаунт' , state:'Vakansii_personalnyj_akkaunt' },
+                    { title:'Заявки на работу' , state:'Zajavki_na_rabotu' },
+                    { title:'Подписи' , state:'Podpisi' },
+                    { title:'Администрирование' , state:'Administrirovanie' }
                 ]
             },
             {

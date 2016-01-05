@@ -3,7 +3,7 @@
  */
 define(['./module'],function(controllers){
     'use strict';
-    controllers.controller('PersonalnyjAkkaunt',['$scope', function($scope){
-
+    controllers.controller('PersonalnyjAkkaunt',['$rootScrope', '$scope', function($rootScrope, $scope){
+        $rootScrope.$broadcast('tobButtons', ['0000000111000000010100001111']);
     }])
 });

@@ -75,6 +75,71 @@ define(['./app'], function (app) {
                 templateUrl: "/templates/templ3.html",
                 controller: 'Otdely'
             })
+            .state('Korporativnye_dokumenty', {
+                url: "/Korporativnye_dokumenty",
+                templateUrl: "/templates/templ3.html",
+                controller: 'KorporativnyeDokumenty'
+            })
+            .state('Gruppy', {
+                url: "/Gruppy",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Gruppy'
+            })
+            .state('Korporativnye_fotografii', {
+                url: "/Korporativnye_fotografii",
+                templateUrl: "/templates/templ3.html",
+                controller: 'KorporativnyeFotografii'
+            })
+            .state('Bankovskie_scheta', {
+                url: "/Bankovskie_scheta",
+                templateUrl: "/templates/templ3.html",
+                controller: 'BankovskieScheta'
+            })
+            .state('Korporativnye_novosti', {
+                url: "/Korporativnye_novosti",
+                templateUrl: "/templates/templ3.html",
+                controller: 'KorporativnyeNovosti'
+            })
+            .state('Rezjume_personalnyj_akkaunt', {
+                url: "/Rezjume_personalnyj_akkaunt",
+                templateUrl: "/templates/templ1.html",
+                controller: 'RezjumePersonalnyjAkkaunt'
+            })
+            .state('Rezjume_korporativnyj_akkaunt', {
+                url: "/Rezjume_korporativnyj_akkaunt",
+                templateUrl: "/templates/templ5.html",
+                controller: 'RezjumeKorporativnyjAkkaunt'
+            })
+            .state('Sotrudniki', {
+                url: "/Sotrudniki",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Sotrudniki'
+            })
+            .state('Vakansii_korporativnyj_akkaunt', {
+                url: "/Vakansii_korporativnyj_akkaunt",
+                templateUrl: "/templates/templ3.html",
+                controller: 'VakansiiKorporativnyjAkkaunt'
+            })
+            .state('Vakansii_personalnyj_akkaunt', {
+                url: "/Vakansii_personalnyj_akkaunt",
+                templateUrl: "/templates/templ5.html",
+                controller: 'VakansiiPersonalnyjAkkaunt'
+            })
+            .state('Zajavki_na_rabotu', {
+                url: "/Zajavki_na_rabotu",
+                templateUrl: "/templates/templ4.html",
+                controller: 'ZajavkiNaRabotu'
+            })
+            .state('Podpisi', {
+                url: "/Podpisi",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Podpisi'
+            })
+            .state('Administrirovanie', {
+                url: "/Administrirovanie",
+                templateUrl: "/templates/templ3.html",
+                controller: 'Administrirovanie'
+            })
             //Ошибка 404
             .state('err_404', {
                 url: "/err404",
