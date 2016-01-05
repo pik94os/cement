@@ -3,7 +3,7 @@
  */
 define(['./module'],function(controllers){
     'use strict';
-    controllers.controller('Filialy',['$scope', function($scope){
-
+    controllers.controller('Filialy',['$rootScope', function($rootScope){
+        $rootScope.$broadcast('tobButtons', '1110000000111000000000001111');
     }])
 });

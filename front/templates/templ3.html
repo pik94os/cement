@@ -1,9 +1,9 @@
 <div class="content">
     <div class="content-tabs">
-        <div class="content-tabs-ul" ng-init="tabShow=0">
-            <div class="content-tabs-li" ng-click="tabShow=0" ng-class="{'active':!tabShow}">Новые</div>
-            <div class="content-tabs-li" ng-click="tabShow=1" ng-class="{'active':tabShow==1}">Действующие</div>
-            <div class="content-tabs-li" ng-click="tabShow=2" ng-class="{'active':tabShow==2}">Архив</div>
+        <div class="content-tabs-ul">
+            <div class="content-tabs-li" ng-click="changeTab(0)" ng-class="{'active':!tabShow}">Новые</div>
+            <div class="content-tabs-li" ng-click="changeTab(1)" ng-class="{'active':tabShow==1}">Действующие</div>
+            <div class="content-tabs-li" ng-click="changeTab(2)" ng-class="{'active':tabShow==2}">Архив</div>
         </div>
     </div>
     <div class="tabs-content" ng-hide="tabShow"></div>

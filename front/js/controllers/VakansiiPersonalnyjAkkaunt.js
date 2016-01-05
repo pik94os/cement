@@ -3,7 +3,7 @@
  */
 define(['./module'],function(controllers){
     'use strict';
-    controllers.controller('VakansiiPersonalnyjAkkaunt',['$scope', function($scope){
-
+    controllers.controller('VakansiiPersonalnyjAkkaunt',['$rootScope', function($rootScope){
+        $rootScope.$broadcast('tobButtons', '1000000000000000000000001111');
     }])
 });
