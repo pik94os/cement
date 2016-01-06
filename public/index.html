@@ -67,12 +67,12 @@
     </nav>
     <div class="container-fluid window">
         <div class="row">
-            <div class="col-xs-2 window-left">
+            <div class="col-xs-2 window-left" ng-controller="AccordionMenuCtrl">
                 <div class="window-title"><span>ОКНО КАТАЛОГ</span><span class="icon glyphicon glyphicon-pushpin"></span></div>
-                <div class="strelka strelka-top">
+                <div class="strelka strelka-top" ng-click="menuDown()">
                     <span class="glyphicon glyphicon-chevron-up"></span>
                 </div>
-                <ul class="accordion-menu" ng-controller="AccordionMenuCtrl">
+                <ul class="accordion-menu">
                     <li class="accordion-menu-li" ng-repeat="item in items" >
                         <div class="accordion-menu-head" ng-click="setOpenIndex($index)">
                             <span class="accordion-menu-title" ng-bind="item.title"></span>
@@ -84,7 +84,7 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="strelka strelka-bottom">
+                <div class="strelka strelka-bottom" ng-click="menuUp()">
                     <span class="glyphicon glyphicon-chevron-down"></span>
                 </div>
             </div>
