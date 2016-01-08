@@ -60,206 +60,47 @@ body{
         }
       }
     }
-
-    $img-group1: url(/img/col1.png);
-    &-new{
-      padding-left: 17px;
-      background:{
-        image: $img-group1;
-        position-y: 2px;
-      }
-    }
-    &-edit{
-      padding-left: 19px;
-      background:{
-        image: $img-group1;
-        position-y: -23px;
-      }
-    }
-    &-delete{
-      padding-left: 17px;
-      background:{
-        image: $img-group1;
-        position-y: -83px;
-      }
-    }
-    &-save{
-      padding-left: 21px;
-      background:{
-        image: $img-group1;
-        position-y: -53px;
-      }
-    }
-    &-dubl{
-      padding-left: 20px;
-      background:{
-        image: $img-group1;
-        position-y: -115px;
-      }
-    }
-    &-to-arh{
-      padding-left: 20px;
-      background:{
-        image: $img-group1;
-        position-y: -148px;
-      }
-    }
-    &-from-arh{
-      padding-left: 19px;
-      background:{
-        image: $img-group1;
-        position-y: -182px;
-      }
-    }
-
-    $img-group2: url(/img/col2.png);
-    &-sogl{
-      padding-left: 17px;
-      background:{
-        image: $img-group2;
-        position-y: 1px;
-      }
-    }
-    &-podp{
-      padding-left: 19px;
-      background:{
-        image: $img-group2;
-        position-y: -22px;
-      }
-    }
-    &-otkl{
-      padding-left: 20px;
-      background:{
-        image: $img-group2;
-        position-y: -46px;
-      }
-    }
-
-    $img-group3: url(/img/col3.png);
-    &-tabl{
-      padding-left: 18px;
-      background:{
-        image: $img-group3;
-        position-y: 1px;
-      }
-    }
-    &-card{
-      padding-left: 20px;
-      background:{
-        image: $img-group3;
-        position-y: -21px;
-      }
-    }
-    &-ek{
-      padding-left: 20px;
-      background:{
-        image: $img-group3;
-        position-y: -44px;
-      }
-    }
-
-    $img-group4: url(/img/col4.png);
-    &-day{
-      padding-left: 18px;
-      background:{
-        image: $img-group4;
-        position-y: 1px;
-      }
-    }
-    &-week{
-      padding-left: 17px;
-      background:{
-        image: $img-group4;
-        position-y: -20px;
-      }
-    }
-    &-month{
-      padding-left: 17px;
-      background:{
-        image: $img-group4;
-        position-y: -41px;
-      }
-    }
-
-    $img-group5: url(/img/col7.png);
-    &-mess{
-      padding-left: 17px;
-      background:{
-        image: $img-group5;
-        position-y: 3px;
-      }
-    }
-    &-comment{
-      padding-left: 18px;
-      background:{
-        image: $img-group5;
-        position-y: -24px;
-      }
-    }
-    &-remind {
-      padding-left: 17px;
-      background: {
-        image: $img-group5;
-        position-y: -56px;
-      }
-    }
-    &-rout {
-      padding-left: 16px;
-      background: {
-        image: $img-group5;
-        position-y: -85px;
-      }
-    }
-    $img-group6: url(/img/col6.png);
-    &-svyazat{
-      padding-left: 16px;
-      background:{
-        image: $img-group6;
-        position-y: 2px;
-      }
-    }
-    &-razorv{
-      padding-left: 16px;
-      background:{
-        image: $img-group6;
-        position-y: -29px;
-      }
-    }
-    &-hide {
-      padding-left: 17px;
-      background: {
-        image: $img-group6;
-        position-y: -61px;
-      }
-    }
-
-    $img-group7: url(/img/col5.png);
-    &-print{
-      padding-left: 20px;
-      background:{
-        image: $img-group7;
-        position-y: 2px;
-      }
-    }
-    &-help{
-      padding-left: 17px;
-      background:{
-        image: $img-group7;
-        position-y: -33px;
-      }
-    }
-    &-update{
-      padding-left: 20px;
-      background: {
-        image: $img-group7;
-        position-y: -80px;
-      }
-    }
-    &-sittings{
-      padding-left: 20px;
-      background: {
-        image: $img-group7;
-        position-y: -133px;
+    $img-group1: "col1";
+    $img-group2: "col2";
+    $img-group3: "col3";
+    $img-group4: "col4";
+    $img-group5: "col7";
+    $img-group6: "col6";
+    $img-group7: "col5";
+    $imgs-list:('new', 17, $img-group1, 2),
+            ('edit', 19, $img-group1, -23),
+            ('delete', 17, $img-group1, -83),
+            ('save', 21, $img-group1, -53),
+            ('dubl', 20, $img-group1, -115),
+            ('to-arh', 20, $img-group1, -148),
+            ('from-arh', 19, $img-group1, -182),
+            ('sogl', 17, $img-group2, 1),
+            ('podp', 19, $img-group2, -22),
+            ('otkl', 20, $img-group2, -46),
+            ('tabl', 18, $img-group3, 1),
+            ('card', 20, $img-group3, -21),
+            ('ek', 20, $img-group3, -44),
+            ('day', 18, $img-group4, 1),
+            ('week', 17, $img-group4, -20),
+            ('month', 17, $img-group4, -41),
+            ('mess', 17, $img-group5, 3),
+            ('comment', 18, $img-group5, -24),
+            ('remind', 17, $img-group5, -56),
+            ('rout', 16, $img-group5, -85),
+            ('svyazat', 16, $img-group6, 2),
+            ('razorv', 16, $img-group6, -29),
+            ('hide', 17, $img-group6, -61),
+            ('print', 20, $img-group7, 2),
+            ('help', 17, $img-group7, -33),
+            ('update', 20, $img-group7, -80),
+            ('sittings', 20, $img-group7, -133);
+    @each $name, $padding-left, $img-group, $position in $imgs-list{
+      &-#{$name}{
+        padding-left: #{$padding-left}px;
+        background: {
+          image: url('/img/#{$img-group}.png');
+          position: 0 #{$position}px;
+        }
       }
     }
   }
